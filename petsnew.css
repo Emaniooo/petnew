@@ -1,0 +1,121 @@
+/* GENERAL LAYOUT */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("images/back.jpg");
+  background-size: cover;        /* fills the whole screen */
+  background-position: center;   /* keeps the image centered */
+  background-repeat: no-repeat;  /* no tiling */
+  background-attachment: fixed;  /* optional: keeps it still while scrolling */
+  min-height: 100vh;             /* ensures full height */
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  background: rgb(247 218 218 / 94%);
+  margin: 35px 120px;
+  padding: inherit;
+  border-radius: 10px;
+  border: black solid 15px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-family: cursive;
+}
+
+/* INPUTS + BUTTONS */
+input, select, button {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  background: #c95d5d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #cf8686;
+}
+
+/* PET CARDS */
+#petContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+#petContainer div {
+  background: white;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 15px;
+  transition: 0.2s;
+}
+
+#petContainer div:hover {
+  transform: scale(1.03);
+}
+
+/* HISTORY BOX */
+#history {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  min-height: 80px;
+}
+
+#history p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* CENTER THE TOP INPUT SECTION */
+.top-controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CENTER THE ACTIVITY BUTTONS */
+.activity-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* OPTIONAL: Make the buttons look consistent */
+.activity-buttons button,
+.top-controls button,
+.top-controls input,
+.top-controls select {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.activity-buttons button {
+  background: #c95d5d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.activity-buttons button:hover {
+  background: #cf8686;
+}

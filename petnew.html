@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Game</title>
+    <link rel="stylesheet" href="petsnew.css">
+</head>
+<body>
+<div class="container">
+
+<h1>Tamagotchi Game</h1>
+
+<div class="top-controls">
+    <input type="text" id="petName" placeholder="Enter name (optional)">
+    <button id="randomName">Get Random Name</button>
+
+    <select id="animalType">
+      <option value="Dog">Dog</option>
+      <option value="Cat">Cat</option>
+      <option value="Rabbit">Rabbit</option>
+      <option value="Hamster">Hamster</option>
+    </select>
+
+    <button id="createPet">Create Pet</button>
+</div>
+
+
+
+<div id="petContainer"></div>
+
+<h2>Activities</h2>
+
+<div class="activity-buttons">
+    <button id="nap">Nap</button>
+    <button id="play">Play</button>
+    <button id="eat">Eat</button>
+</div>
+
+<h2>History</h2>
+<div id="history"></div>
+</div>
+
+<script src="petnew.js"></script>
+
+</body>
+</html>
